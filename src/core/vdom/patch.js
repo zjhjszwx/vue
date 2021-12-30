@@ -140,6 +140,8 @@ export function createPatchFunction (backend) {
       vnode = ownerArray[index] = cloneVNode(vnode)
     }
 
+    console.log(1233333333333333)
+
     vnode.isRootInsert = !nested // for transition enter check
     if (createComponent(vnode, insertedVnodeQueue, parentElm, refElm)) {
       return
